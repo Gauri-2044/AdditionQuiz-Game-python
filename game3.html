@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exit page</title>
+    <style>
+        body{
+            background-color: rgb(6, 151, 137);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            color: chartreuse;
+        }
+        h2{
+            color: blue;
+        }
+        h3{
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="wish">Congratulations</h2>
+    <h1 id="winnwr">YOU WINS !!</h1>
+    <h3 id="score">Your score is </h3>
+    <!-- <script src="game3.js"></script> -->
+    <script>
+        let wish = document.querySelector(".wish");
+let winner = document.querySelector("#winner");
+let score = document.querySelector("#score");
+
+let youScore = document.querySelector("#you");
+let compScore = document.querySelector("#comp");
+
+if(Number(youScore)>Number(compScore)){
+    winner.innerText = "YUO WINS !!";
+    score.innerText = `Your score is ${youScore}`;
+}
+else if (Number(youScore)<Number(compScore)){
+    winner.innerText = "YUO LOSES !!";
+    score.innerText = `Your score is ${youScore}`;
+}
+else{
+    winner.innerText = "TIE UP !!";
+    score.innerText = `Your score is ${youScore}`;
+}
+    </script>
+</body>
+</html>

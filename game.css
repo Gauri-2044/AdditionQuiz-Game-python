@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(48, 10, 216);
+    font-family: Arial, Helvetica, sans-serif;
+    color:azure;
+}
+button{
+    font-size: 20px;
+    height: 40px;
+    font-weight: 400;
+    border: 2px double black;
+    border-radius: 10px;
+    padding:10px;
+}
+#player{
+    background-color: rgb(18, 143, 50);
+    margin-left: 350px;
+}
+#start{
+    background-color: rgb(16, 186, 135);
+    width :50%;
+    margin-left: 200px;
+    margin-top: 10px;
+}
